@@ -18,6 +18,11 @@
       <mapping resource="Speciality.hbm.xml"/>
       <mapping class="ru.javabegin.training.springlibrary.entities.Student"/>
       <mapping resource="Student.hbm.xml"/>
+      <mapping resource="Department.hbm.xml"/>
+      <mapping resource="Educator.hbm.xml"/>
+      <mapping resource="Kafedra.hbm.xml"/>
+      <mapping resource="Speciality.hbm.xml"/>
+      <mapping resource="Student.hbm.xml"/>
       <!-- <property name="connection.username"/> -->
     <!-- <property name="connection.password"/> -->
 

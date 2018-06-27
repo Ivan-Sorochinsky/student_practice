@@ -5,5 +5,27 @@
 <hibernate-mapping>
 
     <class name="ru.javabegin.training.springlibrary.entities.Student" table="student" schema="public"
-           catalog="ivansorochinsky"/>
+           catalog="ivansorochinsky">
+        <property name="id">
+            <column name="id" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="academicPerformance">
+            <column name="academicPerformance" sql-type="double precision" precision="-1" not-null="true"/>
+        </property>
+        <property name="firstname">
+            <column name="firstname" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="lastName">
+            <column name="lastName" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+        <property name="attendance">
+            <column name="attendance" sql-type="double precision" precision="-1" not-null="true"/>
+        </property>
+        <property name="kurs">
+            <column name="kurs" sql-type="integer" not-null="true"/>
+        </property>
+        <property name="speciality">
+            <column name="speciality" sql-type="varchar(30)" length="30" not-null="true"/>
+        </property>
+    </class>
 </hibernate-mapping>

@@ -4,4 +4,13 @@
     "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
 <hibernate-mapping>
 
+    <class name="ru.javabegin.training.springlibrary.entities.Department" table="department" schema="public"
+           catalog="ivansorochinsky">
+        <id name="id">
+            <column name="id" sql-type="integer"/>
+        </id>
+        <property name="denomination">
+            <column name="denomination" sql-type="varchar(30)" length="30"/>
+        </property>
+    </class>
 </hibernate-mapping>

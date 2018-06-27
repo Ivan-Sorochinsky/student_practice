@@ -102,4 +102,16 @@ public class Student {
 
         return true;
     }
+
+    @Override
+    public int hashCode() {
+        int result = id != null ? id.hashCode() : 0;
+        result = 31 * result + (academicPerformance != null ? academicPerformance.hashCode() : 0);
+        result = 31 * result + (firstname != null ? firstname.hashCode() : 0);
+        result = 31 * result + (lastName != null ? lastName.hashCode() : 0);
+        result = 31 * result + (attendance != null ? attendance.hashCode() : 0);
+        result = 31 * result + (kurs != null ? kurs.hashCode() : 0);
+        result = 31 * result + (speciality != null ? speciality.hashCode() : 0);
+        return result;
+    }
 }
