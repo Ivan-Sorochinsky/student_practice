@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-configuration PUBLIC
+    "-//Hibernate/Hibernate Configuration DTD//EN"
+    "http://www.hibernate.org/dtd/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+    <property name="connection.url">jdbc:postgresql://172.17.218.10:5432/ivansorochinsky</property>
+    <property name="connection.driver_class">org.postgresql.Driver</property>
+      <mapping class="ru.javabegin.training.springlibrary.entities.User"/>
+      <mapping resource="ru/javabegin/training/springlibrary/entities/User.hbm.xml"/>
+      <mapping class="ru.javabegin.training.springlibrary.entities.Department"/>
+      <mapping resource="Department.hbm.xml"/>
+      <mapping class="ru.javabegin.training.springlibrary.entities.Educator"/>
+      <mapping resource="Educator.hbm.xml"/>
+      <mapping class="ru.javabegin.training.springlibrary.entities.Kafedra"/>
+      <mapping resource="Kafedra.hbm.xml"/>
+      <mapping class="ru.javabegin.training.springlibrary.entities.Speciality"/>
+      <mapping resource="Speciality.hbm.xml"/>
+      <mapping class="ru.javabegin.training.springlibrary.entities.Student"/>
+      <mapping resource="Student.hbm.xml"/>
+      <!-- <property name="connection.username"/> -->
+    <!-- <property name="connection.password"/> -->
+
+    <!-- DB schema will be updated if needed -->
+    <!-- <property name="hbm2ddl.auto">update</property> -->
+  </session-factory>
+</hibernate-configuration>
